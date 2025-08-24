@@ -1,0 +1,212 @@
+/* Transparent Navbar Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+   
+    color: #fff;
+    font-family: 'Bangers', 'Luckiest Guy', cursive, sans-serif;
+    ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    z-index: 1000;
+    backdrop-filter: blur(6px);
+    box-sizing: border-box;
+    letter-spacing: 3px;
+    text-overflow: ellipsis;
+}
+
+.navbar-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li a {
+    color: #fdfdfd;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.2s;
+}
+
+.navbar-links li a:hover {
+    color: #ffd700;
+}
+
+/* Hamburger menu for mobile */
+.navbar-toggle {
+    display: none;
+}
+
+.navbar-icon {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    user-select: none;
+    color: #fff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 14px 20px;
+    }
+
+    .navbar-links {
+        position: fixed;
+        top: 60px;
+        right: 0;
+        background: transparent;
+        flex-direction: column;
+        width: 200px;
+        height: calc(100vh - 60px);
+        gap: 20px;
+        align-items: center;
+        padding: 30px 20px;
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+        box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
+
+    }
+
+    .navbar-toggle:checked~.navbar-links {
+        transform: translateX(0);
+    }
+
+    .navbar-icon {
+        display: block;
+    }
+
+    .navbar-links {
+        display: flex;
+    }
+}
+
+/* Ensure body content is not hidden behind navbar */
+body {
+    padding-top: 70px;
+    background-color: #111010;
+}
+
+
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner .slider {
+    position: relative;
+    width: 200px;
+    height: 250px;
+    top: 10%;
+    left: calc(50% - 100px);
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    animation: autoRun 15s linear infinite;
+}
+
+@keyframes autoRun {
+    from {
+        transform: perspective(1000px) rotateX(-9deg) rotateY(0deg);
+    }
+
+    to {
+        transform: perspective(1000px) rotateX(-10deg) rotateY(360deg);
+    }
+}
+
+.banner .slider .item {
+    position: absolute;
+    inset: 0 0 0 0;
+    transform:
+        rotateY(calc((var(--position) - 1)*(360/var(--Quantity)) * 1deg)) translateZ(550px);
+}
+
+/* rotateY(calc(var(--i) * 40deg)) */
+.banner .slider .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner .slider .item h2 {
+    color: white;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.movie-card {
+    background: rgba(30, 0, 60, 0.7);
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+    overflow: hidden;
+    width: 220px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.movie-card:hover {
+    transform: translateY(-8px) scale(1.04);
+    box-shadow: 0 8px 32px #ff3cac55, 0 2px 8px #00f0ff33;
+}
+
+.movie-card img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-bottom: 2px solid #ffd700;
+}
+
+.movie-info {
+    padding: 18px 14px 14px 14px;
+    text-align: center;
+    color: #fff;
+}
+
+.movie-info h3 {
+    font-family: 'Luckiest Guy', 'Bangers', cursive, sans-serif;
+    font-size: 1.2rem;
+    margin: 0 0 8px 0;
+    color: #ffd700;
+    letter-spacing: 1px;
+}
+
+.movie-info p {
+    margin: 0 0 10px 0;
+    font-size: 0.95rem;
+    color: #fdfdfd;
+}
+
+.rating {
+    background: #00f0ff;
+    color: #222;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 0.95rem;
+}
