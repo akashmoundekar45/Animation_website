@@ -127,7 +127,7 @@ body {
     height: 250px;
     top: 10%;
     left: calc(50% - 100px);
-     object-fit: cover;
+    object-fit: cover;
     transform-style: preserve-3d;
     transform: perspective(1000px);
     animation: autoRun 15s linear infinite;
@@ -139,7 +139,7 @@ body {
     }
 
     to {
-        transform: perspective(1000px) rotateX(-15deg) rotateY(360deg);
+        transform: perspective(1000px) rotateX(-10deg) rotateY(360deg);
     }
 }
 
@@ -232,7 +232,7 @@ body {
 
 h1 {
     font-size: 2.5rem;
-    color:  #19e8fb;
+    color: #19e8fb;
     margin-bottom: 20px;
     animation: slideIn 3s ease forwards;
     text-shadow: 2px 2px 4px rgb(255, 252, 252);
@@ -245,8 +245,8 @@ p {
     animation: fadeIn 2s ease-in-out alternate;
 }
 
-.content ::scroll-marker{
-    color: #f8ff3a;
+.content ::scroll-marker {
+    color: #6a0fe0;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 1.1rem;
