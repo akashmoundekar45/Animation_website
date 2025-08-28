@@ -5,10 +5,10 @@
     left: 0;
     width: 100%;
     background: transparent;
-   
+
     color: #fff;
     font-family: 'Bangers', 'Luckiest Guy', cursive, sans-serif;
-    ;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -98,7 +98,12 @@
 /* Ensure body content is not hidden behind navbar */
 body {
     padding-top: 70px;
-    background-color: #111010;
+    background-color: #222;
+    /* background-image:url(ccafdbad5e8a928d38d8449d81f77ec4.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat; */
+    /* opacity: 0.95; */
+
 }
 
 
@@ -109,6 +114,11 @@ body {
     text-align: center;
     overflow: hidden;
     position: relative;
+    background-image: url(yuji-itadori-3840x2160-9294.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: fadeIn 2s ease-in-out;
 }
 
 .banner .slider {
@@ -117,6 +127,7 @@ body {
     height: 250px;
     top: 10%;
     left: calc(50% - 100px);
+     object-fit: cover;
     transform-style: preserve-3d;
     transform: perspective(1000px);
     animation: autoRun 15s linear infinite;
@@ -128,7 +139,7 @@ body {
     }
 
     to {
-        transform: perspective(1000px) rotateX(-10deg) rotateY(360deg);
+        transform: perspective(1000px) rotateX(-15deg) rotateY(360deg);
     }
 }
 
@@ -143,7 +154,7 @@ body {
 .banner .slider .item img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .banner .slider .item h2 {
@@ -155,13 +166,14 @@ body {
     flex-wrap: wrap;
     gap: 32px;
     justify-content: center;
-    padding: 40px 0;
+    padding: 4em 0;
+
 }
 
 .movie-card {
     background: rgba(30, 0, 60, 0.7);
     border-radius: 18px;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
     overflow: hidden;
     width: 220px;
     transition: transform 0.2s, box-shadow 0.2s;
@@ -208,5 +220,158 @@ body {
     padding: 3px 10px;
     border-radius: 12px;
     font-weight: bold;
+    text-transform: uppercase;
     font-size: 0.95rem;
 }
+
+.content {
+    max-width: 800px;
+    padding: 20px;
+    animation: fadeInUp 5s ease-in-out;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color:  #19e8fb;
+    margin-bottom: 20px;
+    animation: slideIn 3s ease forwards;
+    text-shadow: 2px 2px 4px rgb(255, 252, 252);
+}
+
+p {
+    font-size: 1.2rem;
+    color: #fbfbfb;
+    line-height: 1.6;
+    animation: fadeIn 2s ease-in-out alternate;
+}
+
+.content ::scroll-marker{
+    color: #f8ff3a;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    animation: fadeIn 2s ease-in-out alternate;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+}
+
+
+
+/* .section-header{
+    text-align: center;
+    margin: 2em 0 1em 0;
+    animation:akash 2s ease-in-out alternate both;
+}
+@keyframes akash {
+    0% {
+        transform: translateX(-70px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(40px);
+        opacity: 1;
+    }
+} */
+
+
+/* .section-header h2 {
+    font-size: 2.5rem;
+    color: #ffd700;
+    margin-bottom: 0.5em;
+    letter-spacing: 2px;
+}
+
+.section-header p {
+    font-size: 2rem;
+    color: #fdfdfd;
+     letter-spacing: 2px;
+     animation: scroll cubic-bezier(0.39, 0.575, 0.565, 1) linear alternate ;
+
+}
+@keyframes scroll {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+        
+    }
+
+    100% {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+}
+
+
+
+.section-header p:hover{
+    color: #ff3cac;
+    transition: color 0.3s ease-in-out;
+    z-index: 1;
+
+} */
