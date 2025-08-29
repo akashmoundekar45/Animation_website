@@ -114,8 +114,12 @@ body {
     text-align: center;
     overflow: hidden;
     position: relative;
+<<<<<<< HEAD
     top: 0px;
     background-image: url(yuji-itadori-3840x2160-9294.jpg);
+=======
+    background-image: url(son-goku-shenron-5120x2880-19885.jpg);
+>>>>>>> 69ba84eb70ff704ae43c5e8603667bd1af4a65d3
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
