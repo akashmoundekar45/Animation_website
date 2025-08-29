@@ -6,8 +6,9 @@
     width: 100%;
     background: transparent;
 
-    color: #fff;
+    color: #fdfdfd;
     font-family: 'Bangers', 'Luckiest Guy', cursive, sans-serif;
+    font-size: 2rem;
 
     display: flex;
     justify-content: space-between;
@@ -114,7 +115,7 @@ body {
     text-align: center;
     overflow: hidden;
     position: relative;
-    background-image: url(son-goku-shenron-5120x2880-19885.jpg);
+    background-image: url(itachi-uchiha-naruto-amoled-black-background-minimal-art-3840x2160-6478.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
