@@ -113,40 +113,9 @@ body {
     text-align: center;
     overflow: hidden;
     position: relative;
-<<<<<<< HEAD
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    background:url('satoru-gojo-jujutsu-4720x3750-9290.jpg');
-    background-size: cover;
+    background: url('anime-bg.jpg') no-repeat center center/cover;
+    filter: brightness(0.2);
 
-
-    animation: slideLeftToRight 1s ease-in-out linear infinite;
-
-}
-
- @keyframes slideLeftToRight {
-   0% {
-       transform: translateX(0px);
-       background:url('satoru-gojo-jujutsu-4720x3750-9290.jpg');
-   }
-   50% {
-       transform: translateX(50px);
-       background:url('goku-4k-5120x2880-17934.jpg');
-   }
-   100% {
-       transform: translateX(100px);
-       background:url('vegeta-super-saiyan-5120x2880-17935.jpg');
-   }
-=======
-    background-image: url(itachi-uchiha-naruto-amoled-black-background-minimal-art-3840x2160-6478.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    animation: fadeIn 2s ease-in-out;
-
->>>>>>> e1c4b32143c1504f2e267fad864d0e3e12a9451f
 }
 
 .banner .slider {
