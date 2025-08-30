@@ -6,8 +6,10 @@
     width: 100%;
     background: transparent;
 
-    color: #fff;
+    color: #fdfdfd;
     font-family: 'Bangers', 'Luckiest Guy', cursive, sans-serif;
+    font-size: 2rem;
+    vector-effect: blur(4px);
 
     display: flex;
     justify-content: space-between;
@@ -111,6 +113,7 @@ body {
     text-align: center;
     overflow: hidden;
     position: relative;
+<<<<<<< HEAD
     top: 0px;
     left: 0px;
     right: 0px;
@@ -136,6 +139,14 @@ body {
        transform: translateX(100px);
        background:url('vegeta-super-saiyan-5120x2880-17935.jpg');
    }
+=======
+    background-image: url(itachi-uchiha-naruto-amoled-black-background-minimal-art-3840x2160-6478.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: fadeIn 2s ease-in-out;
+
+>>>>>>> e1c4b32143c1504f2e267fad864d0e3e12a9451f
 }
 
 .banner .slider {
@@ -250,6 +261,7 @@ body {
 .content {
     max-width: 800px;
     padding: 20px;
+<<<<<<< HEAD
     animation: slider 1s ease-in-out;
 
 }
@@ -268,6 +280,10 @@ body {
         transform: translateX(0);
         opacity: 1;
     }
+=======
+    padding-left: 100px;
+    animation: fadeInUp 5s ease-in-out;
+>>>>>>> e1c4b32143c1504f2e267fad864d0e3e12a9451f
 }
 
 h1 {
