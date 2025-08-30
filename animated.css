@@ -9,6 +9,7 @@
     color: #fdfdfd;
     font-family: 'Bangers', 'Luckiest Guy', cursive, sans-serif;
     font-size: 2rem;
+    vector-effect: blur(4px);
 
     display: flex;
     justify-content: space-between;
@@ -120,6 +121,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     animation: fadeIn 2s ease-in-out;
+
 }
 
 .banner .slider {
@@ -228,6 +230,7 @@ body {
 .content {
     max-width: 800px;
     padding: 20px;
+    padding-left: 100px;
     animation: fadeInUp 5s ease-in-out;
 }
 
